@@ -17,7 +17,7 @@ app.use(cookieParser())
 connectDB()
 
 
-const PORT = process.env.PORT || 4000
+const port = process.env.PORT || 3000
 
 // routes
 // app.get('*', checkUser)
@@ -29,6 +29,6 @@ app.use( authRoutes);
 // app.use('/api/users/',  require('./routes/authRoutes'))
 
 
-app.listen(PORT, () => {
-    console.log(`Server running on port http://localhost:${PORT}`)
+app.listen(port, () => {
+    console.log(`Server running on port http://localhost:${port}`)
 })
